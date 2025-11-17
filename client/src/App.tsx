@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
 import { Demo1Traditional } from './demos/Demo1Traditional';
 import { Demo2Optimistic } from './demos/Demo2Optimistic';
-import { Demo3ReactHook } from './demos/Demo3ReactHook';
+import { Demo3ReactHook } from './demos/Demo3OptimisticWithPending';
 import { Demo4CustomHook } from './demos/Demo4CustomHook';
 import { DelayProvider } from './contexts/DelayContext';
 
