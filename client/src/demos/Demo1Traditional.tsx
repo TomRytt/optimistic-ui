@@ -31,7 +31,7 @@ export function Demo1Traditional() {
   };
 
   const handleThrowPokeball = () => handleThrow('pokeball');
-  const handleThrowMasterball = () => handleThrow('masterball');
+  // const handleThrowMasterball = () => handleThrow('masterball');
   const handleReset = () => setState(initialState);
 
   return (
@@ -40,7 +40,7 @@ export function Demo1Traditional() {
       <DemoUI
         state={state}
         onThrowPokeball={handleThrowPokeball}
-        onThrowMasterball={handleThrowMasterball}
+        // onThrowMasterball={handleThrowMasterball}
         handleReset={handleReset}
         showSpinner={true}
         disableWhenNotIdle={true}

@@ -44,7 +44,7 @@ export function Demo3ReactHook() {
   };
 
   const handleThrowPokeball = () => handleThrow('pokeball');
-  const handleThrowMasterball = () => handleThrow('masterball');
+  // const handleThrowMasterball = () => handleThrow('masterball');
   const handleReset = () => setActualState(initialState);
 
   return (
@@ -53,7 +53,7 @@ export function Demo3ReactHook() {
       <DemoUI
         state={optimisticState}
         onThrowPokeball={handleThrowPokeball}
-        onThrowMasterball={handleThrowMasterball}
+        // onThrowMasterball={handleThrowMasterball}
         handleReset={handleReset}
         showWiggle={isPending}
       />

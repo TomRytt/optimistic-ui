@@ -47,7 +47,7 @@ export function Demo2Optimistic() {
   };
 
   const handleThrowPokeball = () => handleThrow('pokeball');
-  const handleThrowMasterball = () => handleThrow('masterball');
+  // const handleThrowMasterball = () => handleThrow('masterball');
   const handleReset = () => setActualState(initialState);
 
   return (
@@ -56,7 +56,7 @@ export function Demo2Optimistic() {
       <DemoUI
         state={optimisticState}
         onThrowPokeball={handleThrowPokeball}
-        onThrowMasterball={handleThrowMasterball}
+        // onThrowMasterball={handleThrowMasterball}
         handleReset={handleReset}
         disableWhenNotIdle={true}
       />

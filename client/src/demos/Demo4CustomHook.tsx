@@ -31,7 +31,7 @@ export function Demo4CustomHook() {
   };
 
   const handleThrowPokeball = () => handleThrow('pokeball');
-  const handleThrowMasterball = () => handleThrow('masterball');
+  // const handleThrowMasterball = () => handleThrow('masterball');
   const handleReset = () =>
     runOptimisticUpdate({
       setOptimisticState: () => initialState,
@@ -44,7 +44,7 @@ export function Demo4CustomHook() {
       <DemoUI
         state={state}
         onThrowPokeball={handleThrowPokeball}
-        onThrowMasterball={handleThrowMasterball}
+        // onThrowMasterball={handleThrowMasterball}
         handleReset={handleReset}
         showWiggle={isPending}
       />
