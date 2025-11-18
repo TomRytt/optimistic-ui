@@ -3,19 +3,23 @@ import { CatchResponse } from './types';
 
 const router = Router();
 
-// POST /api/catch/pokeball - 30% success rate, configurable delay
+let success = true; // Used to alternate success/failure for Poké Ball catches
+
+// POST /api/catch/pokeball - configurable delay, logic for success/failure based on last attempt
 router.post('/api/catch/pokeball', async (req: Request, res: Response) => {
   // * Get delay from query param (default 3 seconds)
   const delay = parseInt(req.query.delay as string) || 3;
   await new Promise(resolve => setTimeout(resolve, delay * 1000));
 
-  // * Random success (50% chance)
-  const success = Math.random() <= 0.5;
 
   const response: CatchResponse = {
     success,
     message: success ? 'Charizard was caught!' : 'Charizard escaped!'
   };
+
+
+  success = !success; // Toggle success for demonstration purposes
+
 
   res.json(response);
 });
